@@ -22,15 +22,19 @@ body {
   /* margin: 1.3rem; */
 }
 
+li {
+  list-style: none;
+}
+
 /*
   Add to anything that needs a bottom margin,for nice, cohesive vertical rhythm
 */
-h1,
-p {
-  margin: 0 0 1.3rem;
+.card-body h2,
+.card-body p {
+  margin: 0 0 .75em;
 }
 
-img {
+.card-img {
   width: 50px;
   display: block;
   margin: 0 auto;
@@ -47,7 +51,7 @@ img {
     line-height: 1.4;
   }
 
-  main {
+  .cards {
     display: flex;
   }
 
@@ -75,7 +79,7 @@ img {
       "box1 box3";
   }
 
-  .cards img {
+  .card-body img {
     grid-area: box1;
     align-self: center;
     margin-right: .75em;

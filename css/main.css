@@ -42,6 +42,11 @@ img {
 
 @media only screen and (min-width: 38em) {
 
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
   main {
     display: flex;
   }
@@ -50,18 +55,27 @@ img {
 
 @media only screen and (min-width: 60em) {
 
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
 }
 
 @media only screen and (min-width: 90em) {
 
-  article {
+  html {
+    font-size: 130%;
+  }
+
+  .cards {
     display: grid;
     grid-template-areas:
       "box1 box2"
       "box1 box3";
   }
 
-  article img {
+  .cards img {
     grid-area: box1;
     align-self: center;
     margin-right: .75em;

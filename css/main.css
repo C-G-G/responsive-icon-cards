@@ -19,7 +19,11 @@ html {
 }
 
 body {
-  /* margin: 1.3rem; */
+  margin: .75em;
+}
+
+.cards {
+  padding-left: 0;
 }
 
 li {
@@ -29,7 +33,11 @@ li {
 /*
   Add to anything that needs a bottom margin,for nice, cohesive vertical rhythm
 */
-.card-body h2,
+.card-body h2 {
+  margin: .75em 0 0;
+  font-weight: normal;
+}
+
 .card-body p {
   margin: 0 0 .75em;
 }
@@ -72,26 +80,18 @@ li {
     font-size: 130%;
   }
 
-  .cards {
+  .card {
     display: grid;
     grid-template-areas:
       "box1 box2"
       "box1 box3";
   }
 
-  .card-body img {
+  .card-img {
     grid-area: box1;
     align-self: center;
     margin-right: .75em;
 
   }
-  /* article img {
-    float: left;
-  } */
-
-  /* article h2,
-  article p {
-    float: right;
-  } */
 
 }
